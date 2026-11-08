@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vioty Ice Cream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Левая группа: Логотип + Меню -->
+                <div class="nav-left">
+                    <div class="logo">
+                        <strong>Vioty</strong>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#">Main</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Trainers</a></li>
+                        <li><a href="#">App</a></li>
+                    </ul>
+                </div>
+
+                <!-- Правая часть: Таймер -->
+                <div class="timer-wrapper">
+                    <span class="timer-label">Release in:</span>
+                    <span class="timer">10</span>s
+                </div>
+            </nav>
+
+            <div class="hero-wrapper">
+                <div class="hero-text">
+                    <h1>
+                        <b>Feel inside cold with our delicious</b>
+                        <span>ice-cream.</span>
+                    </h1>
+                    <p class="small-title">Sweet fun, full of milk.</p>
+                    <p class="hero-description">
+                        <i>Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've been left eating my thoughts.</i>
+                    </p>
+                    <button class="btn" data-modal-open>Buy Now</button>
+                </div>
+                <div class="hero-image">
+                    <img src="img-main.png" alt="Ice Cream">
+                </div>  
+            </div>  
+        </div>  
+    </header>
+
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn-close" data-modal-close>✕</button>
+            <h2>Buy Ice Cream</h2>
+            <p>Thank you for choosing Vioty!</p>
+            <p>Our manager will contact you soon.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
